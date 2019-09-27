@@ -55,6 +55,17 @@
 		D3063AFE233DF3EB0006CC7C /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADD233DF3EB0006CC7C /* CocoaAsyncSocket.framework */; };
 		D3063B03233DF7630006CC7C /* AppProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3063B00233DF7630006CC7C /* AppProxyProvider.swift */; };
 		D3063B04233DF7630006CC7C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3063B02233DF7630006CC7C /* Info.plist */; };
+		D3063B2F233E092F0006CC7C /* Resolver.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063AD4233DF3EB0006CC7C /* Resolver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3063B30233E0A000006CC7C /* NEKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063AD9233DF3EB0006CC7C /* NEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3063B31233E0A0F0006CC7C /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063ADD233DF3EB0006CC7C /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3063B32233E0A0F0006CC7C /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063AD3233DF3EA0006CC7C /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3063B33233E0A0F0006CC7C /* CocoaLumberjackSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063AD6233DF3EB0006CC7C /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3063B34233E0A0F0006CC7C /* CommonCrypto.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063AD7233DF3EB0006CC7C /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3063B35233E0A0F0006CC7C /* lwip.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063AD8233DF3EB0006CC7C /* lwip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3063B36233E0A0F0006CC7C /* MMDB.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063ADC233DF3EB0006CC7C /* MMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3063B37233E0A0F0006CC7C /* Sodium.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063AD5233DF3EB0006CC7C /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3063B38233E0A0F0006CC7C /* tun2socks.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063ADA233DF3EB0006CC7C /* tun2socks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3063B39233E0A0F0006CC7C /* Yaml.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063ADB233DF3EB0006CC7C /* Yaml.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +96,26 @@
 				D3063A61233DDFB40006CC7C /* PacketTunnel.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3063B2E233E09290006CC7C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D3063B31233E0A0F0006CC7C /* CocoaAsyncSocket.framework in CopyFiles */,
+				D3063B32233E0A0F0006CC7C /* CocoaLumberjack.framework in CopyFiles */,
+				D3063B33233E0A0F0006CC7C /* CocoaLumberjackSwift.framework in CopyFiles */,
+				D3063B34233E0A0F0006CC7C /* CommonCrypto.framework in CopyFiles */,
+				D3063B35233E0A0F0006CC7C /* lwip.framework in CopyFiles */,
+				D3063B36233E0A0F0006CC7C /* MMDB.framework in CopyFiles */,
+				D3063B37233E0A0F0006CC7C /* Sodium.framework in CopyFiles */,
+				D3063B38233E0A0F0006CC7C /* tun2socks.framework in CopyFiles */,
+				D3063B39233E0A0F0006CC7C /* Yaml.framework in CopyFiles */,
+				D3063B30233E0A000006CC7C /* NEKit.framework in CopyFiles */,
+				D3063B2F233E092F0006CC7C /* Resolver.framework in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -294,6 +325,7 @@
 				D3063A23233DDF370006CC7C /* Frameworks */,
 				D3063A24233DDF370006CC7C /* Resources */,
 				D3063A65233DDFB40006CC7C /* Embed App Extensions */,
+				D3063B2E233E09290006CC7C /* CopyFiles */,
 			);
 			buildRules = (
 			);
