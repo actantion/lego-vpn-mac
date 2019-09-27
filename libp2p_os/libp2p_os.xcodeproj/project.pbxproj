@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		853B6149233E266C00645BD4 /* libp2p_os.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B613F233E266C00645BD4 /* libp2p_os.framework */; };
+		853B615C233E26E300645BD4 /* libp2p.h in Headers */ = {isa = PBXBuildFile; fileRef = 853B6159233E26E300645BD4 /* libp2p.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		853B615D233E26E300645BD4 /* libp2p.mm in Sources */ = {isa = PBXBuildFile; fileRef = 853B615A233E26E300645BD4 /* libp2p.mm */; };
+		853B615E233E26E300645BD4 /* vpn_client.h in Headers */ = {isa = PBXBuildFile; fileRef = 853B615B233E26E300645BD4 /* vpn_client.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		853B617D233E272700645BD4 /* libuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6160233E272600645BD4 /* libuv.a */; };
+		853B617E233E272700645BD4 /* libbz2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6161233E272600645BD4 /* libbz2.a */; };
+		853B617F233E272700645BD4 /* libtransport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6162233E272600645BD4 /* libtransport.a */; };
+		853B6180233E272700645BD4 /* libjson2pb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6163233E272600645BD4 /* libjson2pb.a */; };
+		853B6181233E272700645BD4 /* libnetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6164233E272600645BD4 /* libnetwork.a */; };
+		853B6182233E272700645BD4 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6165233E272600645BD4 /* libssl.a */; };
+		853B6183233E272700645BD4 /* liblog4cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6166233E272600645BD4 /* liblog4cpp.a */; };
+		853B6184233E272700645BD4 /* libip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6167233E272600645BD4 /* libip.a */; };
+		853B6185233E272700645BD4 /* libkcp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6168233E272600645BD4 /* libkcp.a */; };
+		853B6186233E272700645BD4 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6169233E272600645BD4 /* libcrypto.a */; };
+		853B6187233E272700645BD4 /* libinit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B616A233E272600645BD4 /* libinit.a */; };
+		853B6188233E272700645BD4 /* libsecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B616B233E272600645BD4 /* libsecurity.a */; };
+		853B6189233E272700645BD4 /* libcryptopp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B616C233E272600645BD4 /* libcryptopp.a */; };
+		853B618A233E272700645BD4 /* libbft.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B616D233E272600645BD4 /* libbft.a */; };
+		853B618B233E272700645BD4 /* libuuid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B616E233E272600645BD4 /* libuuid.a */; };
+		853B618C233E272700645BD4 /* libstatistics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B616F233E272600645BD4 /* libstatistics.a */; };
+		853B618D233E272700645BD4 /* libclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6170233E272700645BD4 /* libclient.a */; };
+		853B618E233E272700645BD4 /* libelection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6171233E272700645BD4 /* libelection.a */; };
+		853B618F233E272700645BD4 /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6172233E272700645BD4 /* libleveldb.a */; };
+		853B6190233E272700645BD4 /* libcommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6173233E272700645BD4 /* libcommon.a */; };
+		853B6191233E272700645BD4 /* libnat_traverse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6174233E272700645BD4 /* libnat_traverse.a */; };
+		853B6192233E272700645BD4 /* libdht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6175233E272700645BD4 /* libdht.a */; };
+		853B6193233E272700645BD4 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6176233E272700645BD4 /* libprotobuf.a */; };
+		853B6194233E272700645BD4 /* libvss.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6177233E272700645BD4 /* libvss.a */; };
+		853B6195233E272700645BD4 /* libbroadcast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6178233E272700645BD4 /* libbroadcast.a */; };
+		853B6196233E272700645BD4 /* libroot_congress.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6179233E272700645BD4 /* libroot_congress.a */; };
+		853B6197233E272700645BD4 /* libblock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B617A233E272700645BD4 /* libblock.a */; };
+		853B6198233E272700645BD4 /* libdb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B617B233E272700645BD4 /* libdb.a */; };
+		853B6199233E272700645BD4 /* libsync.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B617C233E272700645BD4 /* libsync.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		853B614A233E266C00645BD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 853B6136233E266C00645BD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 853B613E233E266C00645BD4;
+			remoteInfo = libp2p_os;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		853B613F233E266C00645BD4 /* libp2p_os.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libp2p_os.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		853B6143233E266C00645BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		853B6148233E266C00645BD4 /* libp2p_osTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libp2p_osTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		853B614F233E266C00645BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		853B6159233E26E300645BD4 /* libp2p.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libp2p.h; sourceTree = "<group>"; };
+		853B615A233E26E300645BD4 /* libp2p.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = libp2p.mm; sourceTree = "<group>"; };
+		853B615B233E26E300645BD4 /* vpn_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vpn_client.h; sourceTree = "<group>"; };
+		853B6160233E272600645BD4 /* libuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuv.a; path = ../libp2p/lib/libuv.a; sourceTree = "<group>"; };
+		853B6161233E272600645BD4 /* libbz2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbz2.a; path = ../libp2p/lib/libbz2.a; sourceTree = "<group>"; };
+		853B6162233E272600645BD4 /* libtransport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtransport.a; path = ../libp2p/lib/libtransport.a; sourceTree = "<group>"; };
+		853B6163233E272600645BD4 /* libjson2pb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjson2pb.a; path = ../libp2p/lib/libjson2pb.a; sourceTree = "<group>"; };
+		853B6164233E272600645BD4 /* libnetwork.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnetwork.a; path = ../libp2p/lib/libnetwork.a; sourceTree = "<group>"; };
+		853B6165233E272600645BD4 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../libp2p/lib/libssl.a; sourceTree = "<group>"; };
+		853B6166233E272600645BD4 /* liblog4cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblog4cpp.a; path = ../libp2p/lib/liblog4cpp.a; sourceTree = "<group>"; };
+		853B6167233E272600645BD4 /* libip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libip.a; path = ../libp2p/lib/libip.a; sourceTree = "<group>"; };
+		853B6168233E272600645BD4 /* libkcp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkcp.a; path = ../libp2p/lib/libkcp.a; sourceTree = "<group>"; };
+		853B6169233E272600645BD4 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../libp2p/lib/libcrypto.a; sourceTree = "<group>"; };
+		853B616A233E272600645BD4 /* libinit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libinit.a; path = ../libp2p/lib/libinit.a; sourceTree = "<group>"; };
+		853B616B233E272600645BD4 /* libsecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsecurity.a; path = ../libp2p/lib/libsecurity.a; sourceTree = "<group>"; };
+		853B616C233E272600645BD4 /* libcryptopp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcryptopp.a; path = ../libp2p/lib/libcryptopp.a; sourceTree = "<group>"; };
+		853B616D233E272600645BD4 /* libbft.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbft.a; path = ../libp2p/lib/libbft.a; sourceTree = "<group>"; };
+		853B616E233E272600645BD4 /* libuuid.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuuid.a; path = ../libp2p/lib/libuuid.a; sourceTree = "<group>"; };
+		853B616F233E272600645BD4 /* libstatistics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstatistics.a; path = ../libp2p/lib/libstatistics.a; sourceTree = "<group>"; };
+		853B6170233E272700645BD4 /* libclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libclient.a; path = ../libp2p/lib/libclient.a; sourceTree = "<group>"; };
+		853B6171233E272700645BD4 /* libelection.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libelection.a; path = ../libp2p/lib/libelection.a; sourceTree = "<group>"; };
+		853B6172233E272700645BD4 /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libleveldb.a; path = ../libp2p/lib/libleveldb.a; sourceTree = "<group>"; };
+		853B6173233E272700645BD4 /* libcommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcommon.a; path = ../libp2p/lib/libcommon.a; sourceTree = "<group>"; };
+		853B6174233E272700645BD4 /* libnat_traverse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnat_traverse.a; path = ../libp2p/lib/libnat_traverse.a; sourceTree = "<group>"; };
+		853B6175233E272700645BD4 /* libdht.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdht.a; path = ../libp2p/lib/libdht.a; sourceTree = "<group>"; };
+		853B6176233E272700645BD4 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = ../libp2p/lib/libprotobuf.a; sourceTree = "<group>"; };
+		853B6177233E272700645BD4 /* libvss.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvss.a; path = ../libp2p/lib/libvss.a; sourceTree = "<group>"; };
+		853B6178233E272700645BD4 /* libbroadcast.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbroadcast.a; path = ../libp2p/lib/libbroadcast.a; sourceTree = "<group>"; };
+		853B6179233E272700645BD4 /* libroot_congress.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libroot_congress.a; path = ../libp2p/lib/libroot_congress.a; sourceTree = "<group>"; };
+		853B617A233E272700645BD4 /* libblock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libblock.a; path = ../libp2p/lib/libblock.a; sourceTree = "<group>"; };
+		853B617B233E272700645BD4 /* libdb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdb.a; path = ../libp2p/lib/libdb.a; sourceTree = "<group>"; };
+		853B617C233E272700645BD4 /* libsync.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsync.a; path = ../libp2p/lib/libsync.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		853B613C233E266C00645BD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853B617D233E272700645BD4 /* libuv.a in Frameworks */,
+				853B617E233E272700645BD4 /* libbz2.a in Frameworks */,
+				853B617F233E272700645BD4 /* libtransport.a in Frameworks */,
+				853B6180233E272700645BD4 /* libjson2pb.a in Frameworks */,
+				853B6181233E272700645BD4 /* libnetwork.a in Frameworks */,
+				853B6182233E272700645BD4 /* libssl.a in Frameworks */,
+				853B6183233E272700645BD4 /* liblog4cpp.a in Frameworks */,
+				853B6184233E272700645BD4 /* libip.a in Frameworks */,
+				853B6185233E272700645BD4 /* libkcp.a in Frameworks */,
+				853B6186233E272700645BD4 /* libcrypto.a in Frameworks */,
+				853B6187233E272700645BD4 /* libinit.a in Frameworks */,
+				853B6188233E272700645BD4 /* libsecurity.a in Frameworks */,
+				853B6189233E272700645BD4 /* libcryptopp.a in Frameworks */,
+				853B618A233E272700645BD4 /* libbft.a in Frameworks */,
+				853B618B233E272700645BD4 /* libuuid.a in Frameworks */,
+				853B618C233E272700645BD4 /* libstatistics.a in Frameworks */,
+				853B618D233E272700645BD4 /* libclient.a in Frameworks */,
+				853B618E233E272700645BD4 /* libelection.a in Frameworks */,
+				853B618F233E272700645BD4 /* libleveldb.a in Frameworks */,
+				853B6190233E272700645BD4 /* libcommon.a in Frameworks */,
+				853B6191233E272700645BD4 /* libnat_traverse.a in Frameworks */,
+				853B6192233E272700645BD4 /* libdht.a in Frameworks */,
+				853B6193233E272700645BD4 /* libprotobuf.a in Frameworks */,
+				853B6194233E272700645BD4 /* libvss.a in Frameworks */,
+				853B6195233E272700645BD4 /* libbroadcast.a in Frameworks */,
+				853B6196233E272700645BD4 /* libroot_congress.a in Frameworks */,
+				853B6197233E272700645BD4 /* libblock.a in Frameworks */,
+				853B6198233E272700645BD4 /* libdb.a in Frameworks */,
+				853B6199233E272700645BD4 /* libsync.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853B6145233E266C00645BD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853B6149233E266C00645BD4 /* libp2p_os.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		853B6135233E266C00645BD4 = {
+			isa = PBXGroup;
+			children = (
+				853B6141233E266C00645BD4 /* libp2p_os */,
+				853B614C233E266C00645BD4 /* libp2p_osTests */,
+				853B6140233E266C00645BD4 /* Products */,
+				853B615F233E272600645BD4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		853B6140233E266C00645BD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				853B613F233E266C00645BD4 /* libp2p_os.framework */,
+				853B6148233E266C00645BD4 /* libp2p_osTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		853B6141233E266C00645BD4 /* libp2p_os */ = {
+			isa = PBXGroup;
+			children = (
+				853B6159233E26E300645BD4 /* libp2p.h */,
+				853B615A233E26E300645BD4 /* libp2p.mm */,
+				853B615B233E26E300645BD4 /* vpn_client.h */,
+				853B6143233E266C00645BD4 /* Info.plist */,
+			);
+			path = libp2p_os;
+			sourceTree = "<group>";
+		};
+		853B614C233E266C00645BD4 /* libp2p_osTests */ = {
+			isa = PBXGroup;
+			children = (
+				853B614F233E266C00645BD4 /* Info.plist */,
+			);
+			path = libp2p_osTests;
+			sourceTree = "<group>";
+		};
+		853B615F233E272600645BD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				853B616D233E272600645BD4 /* libbft.a */,
+				853B617A233E272700645BD4 /* libblock.a */,
+				853B6178233E272700645BD4 /* libbroadcast.a */,
+				853B6161233E272600645BD4 /* libbz2.a */,
+				853B6170233E272700645BD4 /* libclient.a */,
+				853B6173233E272700645BD4 /* libcommon.a */,
+				853B6169233E272600645BD4 /* libcrypto.a */,
+				853B616C233E272600645BD4 /* libcryptopp.a */,
+				853B617B233E272700645BD4 /* libdb.a */,
+				853B6175233E272700645BD4 /* libdht.a */,
+				853B6171233E272700645BD4 /* libelection.a */,
+				853B616A233E272600645BD4 /* libinit.a */,
+				853B6167233E272600645BD4 /* libip.a */,
+				853B6163233E272600645BD4 /* libjson2pb.a */,
+				853B6168233E272600645BD4 /* libkcp.a */,
+				853B6172233E272700645BD4 /* libleveldb.a */,
+				853B6166233E272600645BD4 /* liblog4cpp.a */,
+				853B6174233E272700645BD4 /* libnat_traverse.a */,
+				853B6164233E272600645BD4 /* libnetwork.a */,
+				853B6176233E272700645BD4 /* libprotobuf.a */,
+				853B6179233E272700645BD4 /* libroot_congress.a */,
+				853B616B233E272600645BD4 /* libsecurity.a */,
+				853B6165233E272600645BD4 /* libssl.a */,
+				853B616F233E272600645BD4 /* libstatistics.a */,
+				853B617C233E272700645BD4 /* libsync.a */,
+				853B6162233E272600645BD4 /* libtransport.a */,
+				853B616E233E272600645BD4 /* libuuid.a */,
+				853B6160233E272600645BD4 /* libuv.a */,
+				853B6177233E272700645BD4 /* libvss.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		853B613A233E266C00645BD4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853B615E233E26E300645BD4 /* vpn_client.h in Headers */,
+				853B615C233E26E300645BD4 /* libp2p.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		853B613E233E266C00645BD4 /* libp2p_os */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 853B6153233E266C00645BD4 /* Build configuration list for PBXNativeTarget "libp2p_os" */;
+			buildPhases = (
+				853B613A233E266C00645BD4 /* Headers */,
+				853B613B233E266C00645BD4 /* Sources */,
+				853B613C233E266C00645BD4 /* Frameworks */,
+				853B613D233E266C00645BD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libp2p_os;
+			productName = libp2p_os;
+			productReference = 853B613F233E266C00645BD4 /* libp2p_os.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		853B6147233E266C00645BD4 /* libp2p_osTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 853B6156233E266C00645BD4 /* Build configuration list for PBXNativeTarget "libp2p_osTests" */;
+			buildPhases = (
+				853B6144233E266C00645BD4 /* Sources */,
+				853B6145233E266C00645BD4 /* Frameworks */,
+				853B6146233E266C00645BD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				853B614B233E266C00645BD4 /* PBXTargetDependency */,
+			);
+			name = libp2p_osTests;
+			productName = libp2p_osTests;
+			productReference = 853B6148233E266C00645BD4 /* libp2p_osTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		853B6136233E266C00645BD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = actantion;
+				TargetAttributes = {
+					853B613E233E266C00645BD4 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					853B6147233E266C00645BD4 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 853B6139233E266C00645BD4 /* Build configuration list for PBXProject "libp2p_os" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 853B6135233E266C00645BD4;
+			productRefGroup = 853B6140233E266C00645BD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				853B613E233E266C00645BD4 /* libp2p_os */,
+				853B6147233E266C00645BD4 /* libp2p_osTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		853B613D233E266C00645BD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853B6146233E266C00645BD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		853B613B233E266C00645BD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853B615D233E26E300645BD4 /* libp2p.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853B6144233E266C00645BD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		853B614B233E266C00645BD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 853B613E233E266C00645BD4 /* libp2p_os */;
+			targetProxy = 853B614A233E266C00645BD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		853B6151233E266C00645BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/lib/";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LIBTOOLFLAGS = "-lclient -linit -lbft -lblock -lvss -lnetwork -lsync -lbroadcast -ldht -lnat_traverse -ltransport -lkcp -lbz2 -ldb -lsecurity -lip -lcommon -lprotobuf -luv -luuid";
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		853B6152233E266C00645BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/lib/";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LIBTOOLFLAGS = "-lclient -linit -lbft -lblock -lvss -lnetwork -lsync -lbroadcast -ldht -lnat_traverse -ltransport -lkcp -lbz2 -ldb -lsecurity -lip -lcommon -lprotobuf -luv -luuid";
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		853B6154233E266C00645BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = libp2p_os/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fmkj.hammer-.libp2p-os";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		853B6155233E266C00645BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = libp2p_os/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fmkj.hammer-.libp2p-os";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		853B6157233E266C00645BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				INFOPLIST_FILE = libp2p_osTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fmkj.hammer-.libp2p-osTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		853B6158233E266C00645BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				INFOPLIST_FILE = libp2p_osTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fmkj.hammer-.libp2p-osTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		853B6139233E266C00645BD4 /* Build configuration list for PBXProject "libp2p_os" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853B6151233E266C00645BD4 /* Debug */,
+				853B6152233E266C00645BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		853B6153233E266C00645BD4 /* Build configuration list for PBXNativeTarget "libp2p_os" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853B6154233E266C00645BD4 /* Debug */,
+				853B6155233E266C00645BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		853B6156233E266C00645BD4 /* Build configuration list for PBXNativeTarget "libp2p_osTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853B6157233E266C00645BD4 /* Debug */,
+				853B6158233E266C00645BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 853B6136233E266C00645BD4 /* Project object */;
+}

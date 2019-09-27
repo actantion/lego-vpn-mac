@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		001FCFCA7C616495716E10F6 /* Pods_TenonVPNMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA6AE09CABCA5F73D81CB88 /* Pods_TenonVPNMac.framework */; };
 		4C31CFB2BE4245E78D4AB07B /* Pods_freeWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BA0988FE8093E45A87BF45 /* Pods_freeWidget.framework */; };
+		853B619E233E2BAE00645BD4 /* TenonP2pLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B619D233E2BAD00645BD4 /* TenonP2pLib.swift */; };
+		853B61A6233E2F0800645BD4 /* TenonVPNMac in Resources */ = {isa = PBXBuildFile; fileRef = 853B61A5233E2F0700645BD4 /* TenonVPNMac */; };
+		853B6222233E31AB00645BD4 /* libp2p.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853B6221233E31AB00645BD4 /* libp2p.framework */; };
+		853B6223233E31AB00645BD4 /* libp2p.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 853B6221233E31AB00645BD4 /* libp2p.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B0E0E5B0A41726EA05EC61CC /* Pods_PacketTunnel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1F1A7D7EE15ACBEEBF8D8F /* Pods_PacketTunnel.framework */; };
 		D3063A2A233DDF370006CC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3063A29233DDF370006CC7C /* AppDelegate.swift */; };
 		D3063A2C233DDF370006CC7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3063A2B233DDF370006CC7C /* ViewController.swift */; };
@@ -109,6 +113,7 @@
 				D3063B33233E0A0F0006CC7C /* CocoaLumberjackSwift.framework in CopyFiles */,
 				D3063B34233E0A0F0006CC7C /* CommonCrypto.framework in CopyFiles */,
 				D3063B35233E0A0F0006CC7C /* lwip.framework in CopyFiles */,
+				853B6223233E31AB00645BD4 /* libp2p.framework in CopyFiles */,
 				D3063B36233E0A0F0006CC7C /* MMDB.framework in CopyFiles */,
 				D3063B37233E0A0F0006CC7C /* Sodium.framework in CopyFiles */,
 				D3063B38233E0A0F0006CC7C /* tun2socks.framework in CopyFiles */,
@@ -127,6 +132,9 @@
 		5AA6AE09CABCA5F73D81CB88 /* Pods_TenonVPNMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenonVPNMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D46BCA8226B28428A978ED /* Pods-TenonVPNMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenonVPNMac.debug.xcconfig"; path = "Target Support Files/Pods-TenonVPNMac/Pods-TenonVPNMac.debug.xcconfig"; sourceTree = "<group>"; };
 		7CD77262728A66A91BEF907F /* Pods-freeWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeWidget.debug.xcconfig"; path = "Target Support Files/Pods-freeWidget/Pods-freeWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		853B619D233E2BAD00645BD4 /* TenonP2pLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenonP2pLib.swift; sourceTree = "<group>"; };
+		853B61A5233E2F0700645BD4 /* TenonVPNMac */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TenonVPNMac; sourceTree = "<group>"; };
+		853B6221233E31AB00645BD4 /* libp2p.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libp2p.framework; path = Carthage/Build/Mac/libp2p.framework; sourceTree = "<group>"; };
 		8E1F1A7D7EE15ACBEEBF8D8F /* Pods_PacketTunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PacketTunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B001BCE2F331874CA73B96D0 /* Pods-PacketTunnel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PacketTunnel.release.xcconfig"; path = "Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel.release.xcconfig"; sourceTree = "<group>"; };
 		D3063A26233DDF370006CC7C /* TenonVPNMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenonVPNMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +174,7 @@
 			files = (
 				D3063AE1233DF3EB0006CC7C /* Resolver.framework in Frameworks */,
 				D3063AF0233DF3EB0006CC7C /* NEKit.framework in Frameworks */,
+				853B6222233E31AB00645BD4 /* libp2p.framework in Frameworks */,
 				001FCFCA7C616495716E10F6 /* Pods_TenonVPNMac.framework in Frameworks */,
 				D3063AE7233DF3EB0006CC7C /* CocoaLumberjackSwift.framework in Frameworks */,
 				D3063ADE233DF3EB0006CC7C /* CocoaLumberjack.framework in Frameworks */,
@@ -261,6 +270,7 @@
 		D3063A1D233DDF370006CC7C = {
 			isa = PBXGroup;
 			children = (
+				853B6221233E31AB00645BD4 /* libp2p.framework */,
 				D3063A28233DDF370006CC7C /* TenonVPNMac */,
 				D3063A5A233DDFB40006CC7C /* PacketTunnel */,
 				D3063AFF233DF7630006CC7C /* freeWidget */,
@@ -283,6 +293,8 @@
 		D3063A28233DDF370006CC7C /* TenonVPNMac */ = {
 			isa = PBXGroup;
 			children = (
+				853B619D233E2BAD00645BD4 /* TenonP2pLib.swift */,
+				853B61A5233E2F0700645BD4 /* TenonVPNMac */,
 				D3063A29233DDF370006CC7C /* AppDelegate.swift */,
 				D3063A2B233DDF370006CC7C /* ViewController.swift */,
 				D3063A2D233DDF380006CC7C /* Assets.xcassets */,
@@ -453,6 +465,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				853B61A6233E2F0800645BD4 /* TenonVPNMac in Resources */,
 				D3063A2E233DDF380006CC7C /* Assets.xcassets in Resources */,
 				D3063A31233DDF380006CC7C /* Main.storyboard in Resources */,
 				D3063B04233DF7630006CC7C /* Info.plist in Resources */,
@@ -550,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3063A2C233DDF370006CC7C /* ViewController.swift in Sources */,
+				853B619E233E2BAE00645BD4 /* TenonP2pLib.swift in Sources */,
 				D3063B03233DF7630006CC7C /* AppProxyProvider.swift in Sources */,
 				D3063A2A233DDF370006CC7C /* AppDelegate.swift in Sources */,
 			);
@@ -732,7 +746,30 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/libp2p/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = (
+					"-lclient",
+					"-linit",
+					"-lbft",
+					"-lblock",
+					"-lvss",
+					"-lnetwork",
+					"-lsync",
+					"-lbroadcast",
+					"-ldht",
+					"-lnat_traverse",
+					"-ltransport",
+					"-lkcp",
+					"-lbz2",
+					"-ldb",
+					"-lsecurity",
+					"-lip",
+					"-lcommon",
+					"-lprotobuf",
+					"-luv",
+					"-luuid",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -759,7 +796,30 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/libp2p/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = (
+					"-lclient",
+					"-linit",
+					"-lbft",
+					"-lblock",
+					"-lvss",
+					"-lnetwork",
+					"-lsync",
+					"-lbroadcast",
+					"-ldht",
+					"-lnat_traverse",
+					"-ltransport",
+					"-lkcp",
+					"-lbz2",
+					"-ldb",
+					"-lsecurity",
+					"-lip",
+					"-lcommon",
+					"-lprotobuf",
+					"-luv",
+					"-luuid",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
