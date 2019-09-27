@@ -693,6 +693,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TenonVPNMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -719,6 +720,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TenonVPNMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -799,6 +801,11 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/libp2pmacOS/lib",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac.freeWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -823,6 +830,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/libp2pmacOS/lib",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac.freeWidget;

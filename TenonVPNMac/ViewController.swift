@@ -7,6 +7,8 @@
 //
 
 import Cocoa
+import NetworkExtension
+import NEKit
 
 class ViewController: NSViewController {
 
