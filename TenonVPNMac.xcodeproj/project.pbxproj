@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001FCFCA7C616495716E10F6 /* Pods_TenonVPNMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA6AE09CABCA5F73D81CB88 /* Pods_TenonVPNMac.framework */; };
+		4C31CFB2BE4245E78D4AB07B /* Pods_freeWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BA0988FE8093E45A87BF45 /* Pods_freeWidget.framework */; };
+		B0E0E5B0A41726EA05EC61CC /* Pods_PacketTunnel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1F1A7D7EE15ACBEEBF8D8F /* Pods_PacketTunnel.framework */; };
+		D3063A2A233DDF370006CC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3063A29233DDF370006CC7C /* AppDelegate.swift */; };
+		D3063A2C233DDF370006CC7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3063A2B233DDF370006CC7C /* ViewController.swift */; };
+		D3063A2E233DDF380006CC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3063A2D233DDF380006CC7C /* Assets.xcassets */; };
+		D3063A31233DDF380006CC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3063A2F233DDF380006CC7C /* Main.storyboard */; };
+		D3063A5C233DDFB40006CC7C /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3063A5B233DDFB40006CC7C /* PacketTunnelProvider.swift */; };
+		D3063A61233DDFB40006CC7C /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3063A59233DDFB40006CC7C /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3063A72233DDFD20006CC7C /* freeWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3063A6A233DDFD20006CC7C /* freeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3063A77233DE0E80006CC7C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063A76233DE0E80006CC7C /* NetworkExtension.framework */; };
+		D3063A78233DE0FA0006CC7C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063A76233DE0E80006CC7C /* NetworkExtension.framework */; };
+		D3063A79233DE0FF0006CC7C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063A76233DE0E80006CC7C /* NetworkExtension.framework */; };
+		D3063ADE233DF3EB0006CC7C /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD3233DF3EA0006CC7C /* CocoaLumberjack.framework */; };
+		D3063ADF233DF3EB0006CC7C /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD3233DF3EA0006CC7C /* CocoaLumberjack.framework */; };
+		D3063AE0233DF3EB0006CC7C /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD3233DF3EA0006CC7C /* CocoaLumberjack.framework */; };
+		D3063AE1233DF3EB0006CC7C /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD4233DF3EB0006CC7C /* Resolver.framework */; };
+		D3063AE2233DF3EB0006CC7C /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD4233DF3EB0006CC7C /* Resolver.framework */; };
+		D3063AE3233DF3EB0006CC7C /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD4233DF3EB0006CC7C /* Resolver.framework */; };
+		D3063AE4233DF3EB0006CC7C /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD5233DF3EB0006CC7C /* Sodium.framework */; };
+		D3063AE5233DF3EB0006CC7C /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD5233DF3EB0006CC7C /* Sodium.framework */; };
+		D3063AE6233DF3EB0006CC7C /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD5233DF3EB0006CC7C /* Sodium.framework */; };
+		D3063AE7233DF3EB0006CC7C /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD6233DF3EB0006CC7C /* CocoaLumberjackSwift.framework */; };
+		D3063AE8233DF3EB0006CC7C /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD6233DF3EB0006CC7C /* CocoaLumberjackSwift.framework */; };
+		D3063AE9233DF3EB0006CC7C /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD6233DF3EB0006CC7C /* CocoaLumberjackSwift.framework */; };
+		D3063AEA233DF3EB0006CC7C /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD7233DF3EB0006CC7C /* CommonCrypto.framework */; };
+		D3063AEB233DF3EB0006CC7C /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD7233DF3EB0006CC7C /* CommonCrypto.framework */; };
+		D3063AEC233DF3EB0006CC7C /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD7233DF3EB0006CC7C /* CommonCrypto.framework */; };
+		D3063AED233DF3EB0006CC7C /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD8233DF3EB0006CC7C /* lwip.framework */; };
+		D3063AEE233DF3EB0006CC7C /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD8233DF3EB0006CC7C /* lwip.framework */; };
+		D3063AEF233DF3EB0006CC7C /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD8233DF3EB0006CC7C /* lwip.framework */; };
+		D3063AF0233DF3EB0006CC7C /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD9233DF3EB0006CC7C /* NEKit.framework */; };
+		D3063AF1233DF3EB0006CC7C /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD9233DF3EB0006CC7C /* NEKit.framework */; };
+		D3063AF2233DF3EB0006CC7C /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063AD9233DF3EB0006CC7C /* NEKit.framework */; };
+		D3063AF3233DF3EB0006CC7C /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADA233DF3EB0006CC7C /* tun2socks.framework */; };
+		D3063AF4233DF3EB0006CC7C /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADA233DF3EB0006CC7C /* tun2socks.framework */; };
+		D3063AF5233DF3EB0006CC7C /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADA233DF3EB0006CC7C /* tun2socks.framework */; };
+		D3063AF6233DF3EB0006CC7C /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADB233DF3EB0006CC7C /* Yaml.framework */; };
+		D3063AF7233DF3EB0006CC7C /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADB233DF3EB0006CC7C /* Yaml.framework */; };
+		D3063AF8233DF3EB0006CC7C /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADB233DF3EB0006CC7C /* Yaml.framework */; };
+		D3063AF9233DF3EB0006CC7C /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADC233DF3EB0006CC7C /* MMDB.framework */; };
+		D3063AFA233DF3EB0006CC7C /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADC233DF3EB0006CC7C /* MMDB.framework */; };
+		D3063AFB233DF3EB0006CC7C /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADC233DF3EB0006CC7C /* MMDB.framework */; };
+		D3063AFC233DF3EB0006CC7C /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADD233DF3EB0006CC7C /* CocoaAsyncSocket.framework */; };
+		D3063AFD233DF3EB0006CC7C /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADD233DF3EB0006CC7C /* CocoaAsyncSocket.framework */; };
+		D3063AFE233DF3EB0006CC7C /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3063ADD233DF3EB0006CC7C /* CocoaAsyncSocket.framework */; };
+		D3063B03233DF7630006CC7C /* AppProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3063B00233DF7630006CC7C /* AppProxyProvider.swift */; };
+		D3063B04233DF7630006CC7C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3063B02233DF7630006CC7C /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3063A5F233DDFB40006CC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3063A1E233DDF370006CC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3063A58233DDFB40006CC7C;
+			remoteInfo = PacketTunnel;
+		};
+		D3063A70233DDFD20006CC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3063A1E233DDF370006CC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3063A69233DDFD20006CC7C;
+			remoteInfo = freeWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3063A65233DDFB40006CC7C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D3063A72233DDFD20006CC7C /* freeWidget.appex in Embed App Extensions */,
+				D3063A61233DDFB40006CC7C /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08A410A242C18C6B43EE2125 /* Pods-TenonVPNMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenonVPNMac.release.xcconfig"; path = "Target Support Files/Pods-TenonVPNMac/Pods-TenonVPNMac.release.xcconfig"; sourceTree = "<group>"; };
+		0F07FAF0A765B0E69E0C5A9A /* Pods-PacketTunnel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PacketTunnel.debug.xcconfig"; path = "Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel.debug.xcconfig"; sourceTree = "<group>"; };
+		151E787E815A206598864C65 /* Pods-freeWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeWidget.release.xcconfig"; path = "Target Support Files/Pods-freeWidget/Pods-freeWidget.release.xcconfig"; sourceTree = "<group>"; };
+		5AA6AE09CABCA5F73D81CB88 /* Pods_TenonVPNMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenonVPNMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72D46BCA8226B28428A978ED /* Pods-TenonVPNMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenonVPNMac.debug.xcconfig"; path = "Target Support Files/Pods-TenonVPNMac/Pods-TenonVPNMac.debug.xcconfig"; sourceTree = "<group>"; };
+		7CD77262728A66A91BEF907F /* Pods-freeWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeWidget.debug.xcconfig"; path = "Target Support Files/Pods-freeWidget/Pods-freeWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		8E1F1A7D7EE15ACBEEBF8D8F /* Pods_PacketTunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PacketTunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B001BCE2F331874CA73B96D0 /* Pods-PacketTunnel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PacketTunnel.release.xcconfig"; path = "Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel.release.xcconfig"; sourceTree = "<group>"; };
+		D3063A26233DDF370006CC7C /* TenonVPNMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenonVPNMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3063A29233DDF370006CC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3063A2B233DDF370006CC7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3063A2D233DDF380006CC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3063A30233DDF380006CC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3063A32233DDF380006CC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3063A33233DDF380006CC7C /* TenonVPNMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TenonVPNMac.entitlements; sourceTree = "<group>"; };
+		D3063A59233DDFB40006CC7C /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3063A5B233DDFB40006CC7C /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		D3063A5D233DDFB40006CC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3063A5E233DDFB40006CC7C /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		D3063A6A233DDFD20006CC7C /* freeWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = freeWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3063A76233DE0E80006CC7C /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		D3063AD3233DF3EA0006CC7C /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/Mac/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		D3063AD4233DF3EB0006CC7C /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = Carthage/Build/Mac/Resolver.framework; sourceTree = "<group>"; };
+		D3063AD5233DF3EB0006CC7C /* Sodium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sodium.framework; path = Carthage/Build/Mac/Sodium.framework; sourceTree = "<group>"; };
+		D3063AD6233DF3EB0006CC7C /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/Mac/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		D3063AD7233DF3EB0006CC7C /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/Mac/CommonCrypto.framework; sourceTree = "<group>"; };
+		D3063AD8233DF3EB0006CC7C /* lwip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lwip.framework; path = Carthage/Build/Mac/lwip.framework; sourceTree = "<group>"; };
+		D3063AD9233DF3EB0006CC7C /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = Carthage/Build/Mac/NEKit.framework; sourceTree = "<group>"; };
+		D3063ADA233DF3EB0006CC7C /* tun2socks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tun2socks.framework; path = Carthage/Build/Mac/tun2socks.framework; sourceTree = "<group>"; };
+		D3063ADB233DF3EB0006CC7C /* Yaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yaml.framework; path = Carthage/Build/Mac/Yaml.framework; sourceTree = "<group>"; };
+		D3063ADC233DF3EB0006CC7C /* MMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMDB.framework; path = Carthage/Build/Mac/MMDB.framework; sourceTree = "<group>"; };
+		D3063ADD233DF3EB0006CC7C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/Mac/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		D3063B00233DF7630006CC7C /* AppProxyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppProxyProvider.swift; sourceTree = "<group>"; };
+		D3063B01233DF7630006CC7C /* freeWidget.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = freeWidget.entitlements; sourceTree = "<group>"; };
+		D3063B02233DF7630006CC7C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7BA0988FE8093E45A87BF45 /* Pods_freeWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_freeWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3063A23233DDF370006CC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3063AE1233DF3EB0006CC7C /* Resolver.framework in Frameworks */,
+				D3063AF0233DF3EB0006CC7C /* NEKit.framework in Frameworks */,
+				001FCFCA7C616495716E10F6 /* Pods_TenonVPNMac.framework in Frameworks */,
+				D3063AE7233DF3EB0006CC7C /* CocoaLumberjackSwift.framework in Frameworks */,
+				D3063ADE233DF3EB0006CC7C /* CocoaLumberjack.framework in Frameworks */,
+				D3063AEA233DF3EB0006CC7C /* CommonCrypto.framework in Frameworks */,
+				D3063A77233DE0E80006CC7C /* NetworkExtension.framework in Frameworks */,
+				D3063AF6233DF3EB0006CC7C /* Yaml.framework in Frameworks */,
+				D3063AFC233DF3EB0006CC7C /* CocoaAsyncSocket.framework in Frameworks */,
+				D3063AF3233DF3EB0006CC7C /* tun2socks.framework in Frameworks */,
+				D3063AED233DF3EB0006CC7C /* lwip.framework in Frameworks */,
+				D3063AF9233DF3EB0006CC7C /* MMDB.framework in Frameworks */,
+				D3063AE4233DF3EB0006CC7C /* Sodium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3063A56233DDFB40006CC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3063AE2233DF3EB0006CC7C /* Resolver.framework in Frameworks */,
+				D3063AF1233DF3EB0006CC7C /* NEKit.framework in Frameworks */,
+				B0E0E5B0A41726EA05EC61CC /* Pods_PacketTunnel.framework in Frameworks */,
+				D3063AE8233DF3EB0006CC7C /* CocoaLumberjackSwift.framework in Frameworks */,
+				D3063ADF233DF3EB0006CC7C /* CocoaLumberjack.framework in Frameworks */,
+				D3063AEB233DF3EB0006CC7C /* CommonCrypto.framework in Frameworks */,
+				D3063A78233DE0FA0006CC7C /* NetworkExtension.framework in Frameworks */,
+				D3063AF7233DF3EB0006CC7C /* Yaml.framework in Frameworks */,
+				D3063AFD233DF3EB0006CC7C /* CocoaAsyncSocket.framework in Frameworks */,
+				D3063AF4233DF3EB0006CC7C /* tun2socks.framework in Frameworks */,
+				D3063AEE233DF3EB0006CC7C /* lwip.framework in Frameworks */,
+				D3063AFA233DF3EB0006CC7C /* MMDB.framework in Frameworks */,
+				D3063AE5233DF3EB0006CC7C /* Sodium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3063A67233DDFD20006CC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3063AE3233DF3EB0006CC7C /* Resolver.framework in Frameworks */,
+				D3063AF2233DF3EB0006CC7C /* NEKit.framework in Frameworks */,
+				4C31CFB2BE4245E78D4AB07B /* Pods_freeWidget.framework in Frameworks */,
+				D3063AE9233DF3EB0006CC7C /* CocoaLumberjackSwift.framework in Frameworks */,
+				D3063AE0233DF3EB0006CC7C /* CocoaLumberjack.framework in Frameworks */,
+				D3063AEC233DF3EB0006CC7C /* CommonCrypto.framework in Frameworks */,
+				D3063A79233DE0FF0006CC7C /* NetworkExtension.framework in Frameworks */,
+				D3063AF8233DF3EB0006CC7C /* Yaml.framework in Frameworks */,
+				D3063AFE233DF3EB0006CC7C /* CocoaAsyncSocket.framework in Frameworks */,
+				D3063AF5233DF3EB0006CC7C /* tun2socks.framework in Frameworks */,
+				D3063AEF233DF3EB0006CC7C /* lwip.framework in Frameworks */,
+				D3063AFB233DF3EB0006CC7C /* MMDB.framework in Frameworks */,
+				D3063AE6233DF3EB0006CC7C /* Sodium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59C1545F5A2BB53E73FEE61A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F07FAF0A765B0E69E0C5A9A /* Pods-PacketTunnel.debug.xcconfig */,
+				B001BCE2F331874CA73B96D0 /* Pods-PacketTunnel.release.xcconfig */,
+				72D46BCA8226B28428A978ED /* Pods-TenonVPNMac.debug.xcconfig */,
+				08A410A242C18C6B43EE2125 /* Pods-TenonVPNMac.release.xcconfig */,
+				7CD77262728A66A91BEF907F /* Pods-freeWidget.debug.xcconfig */,
+				151E787E815A206598864C65 /* Pods-freeWidget.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC6E734E7671B1AF23823471 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3063ADD233DF3EB0006CC7C /* CocoaAsyncSocket.framework */,
+				D3063AD3233DF3EA0006CC7C /* CocoaLumberjack.framework */,
+				D3063AD6233DF3EB0006CC7C /* CocoaLumberjackSwift.framework */,
+				D3063AD7233DF3EB0006CC7C /* CommonCrypto.framework */,
+				D3063AD8233DF3EB0006CC7C /* lwip.framework */,
+				D3063ADC233DF3EB0006CC7C /* MMDB.framework */,
+				D3063AD9233DF3EB0006CC7C /* NEKit.framework */,
+				D3063AD4233DF3EB0006CC7C /* Resolver.framework */,
+				D3063AD5233DF3EB0006CC7C /* Sodium.framework */,
+				D3063ADA233DF3EB0006CC7C /* tun2socks.framework */,
+				D3063ADB233DF3EB0006CC7C /* Yaml.framework */,
+				D3063A76233DE0E80006CC7C /* NetworkExtension.framework */,
+				8E1F1A7D7EE15ACBEEBF8D8F /* Pods_PacketTunnel.framework */,
+				5AA6AE09CABCA5F73D81CB88 /* Pods_TenonVPNMac.framework */,
+				E7BA0988FE8093E45A87BF45 /* Pods_freeWidget.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3063A1D233DDF370006CC7C = {
+			isa = PBXGroup;
+			children = (
+				D3063A28233DDF370006CC7C /* TenonVPNMac */,
+				D3063A5A233DDFB40006CC7C /* PacketTunnel */,
+				D3063AFF233DF7630006CC7C /* freeWidget */,
+				D3063A27233DDF370006CC7C /* Products */,
+				59C1545F5A2BB53E73FEE61A /* Pods */,
+				AC6E734E7671B1AF23823471 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3063A27233DDF370006CC7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3063A26233DDF370006CC7C /* TenonVPNMac.app */,
+				D3063A59233DDFB40006CC7C /* PacketTunnel.appex */,
+				D3063A6A233DDFD20006CC7C /* freeWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3063A28233DDF370006CC7C /* TenonVPNMac */ = {
+			isa = PBXGroup;
+			children = (
+				D3063A29233DDF370006CC7C /* AppDelegate.swift */,
+				D3063A2B233DDF370006CC7C /* ViewController.swift */,
+				D3063A2D233DDF380006CC7C /* Assets.xcassets */,
+				D3063A2F233DDF380006CC7C /* Main.storyboard */,
+				D3063A32233DDF380006CC7C /* Info.plist */,
+				D3063A33233DDF380006CC7C /* TenonVPNMac.entitlements */,
+			);
+			path = TenonVPNMac;
+			sourceTree = "<group>";
+		};
+		D3063A5A233DDFB40006CC7C /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				D3063A5B233DDFB40006CC7C /* PacketTunnelProvider.swift */,
+				D3063A5D233DDFB40006CC7C /* Info.plist */,
+				D3063A5E233DDFB40006CC7C /* PacketTunnel.entitlements */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+		D3063AFF233DF7630006CC7C /* freeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D3063B00233DF7630006CC7C /* AppProxyProvider.swift */,
+				D3063B01233DF7630006CC7C /* freeWidget.entitlements */,
+				D3063B02233DF7630006CC7C /* Info.plist */,
+			);
+			path = freeWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3063A25233DDF370006CC7C /* TenonVPNMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3063A4C233DDF380006CC7C /* Build configuration list for PBXNativeTarget "TenonVPNMac" */;
+			buildPhases = (
+				B1E192032DE688E125028F4E /* [CP] Check Pods Manifest.lock */,
+				D3063A22233DDF370006CC7C /* Sources */,
+				D3063A23233DDF370006CC7C /* Frameworks */,
+				D3063A24233DDF370006CC7C /* Resources */,
+				D3063A65233DDFB40006CC7C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3063A60233DDFB40006CC7C /* PBXTargetDependency */,
+				D3063A71233DDFD20006CC7C /* PBXTargetDependency */,
+			);
+			name = TenonVPNMac;
+			productName = TenonVPNMac;
+			productReference = D3063A26233DDF370006CC7C /* TenonVPNMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3063A58233DDFB40006CC7C /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3063A62233DDFB40006CC7C /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				EFE48765CE3907A70FD627BE /* [CP] Check Pods Manifest.lock */,
+				D3063A55233DDFB40006CC7C /* Sources */,
+				D3063A56233DDFB40006CC7C /* Frameworks */,
+				D3063A57233DDFB40006CC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			productName = PacketTunnel;
+			productReference = D3063A59233DDFB40006CC7C /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D3063A69233DDFD20006CC7C /* freeWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3063A73233DDFD20006CC7C /* Build configuration list for PBXNativeTarget "freeWidget" */;
+			buildPhases = (
+				D3677A7AC77984F2103CEF50 /* [CP] Check Pods Manifest.lock */,
+				D3063A66233DDFD20006CC7C /* Sources */,
+				D3063A67233DDFD20006CC7C /* Frameworks */,
+				D3063A68233DDFD20006CC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = freeWidget;
+			productName = freeWidget;
+			productReference = D3063A6A233DDFD20006CC7C /* freeWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3063A1E233DDF370006CC7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = friend;
+				TargetAttributes = {
+					D3063A25233DDF370006CC7C = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					D3063A58233DDFB40006CC7C = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					D3063A69233DDFD20006CC7C = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D3063A21233DDF370006CC7C /* Build configuration list for PBXProject "TenonVPNMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3063A1D233DDF370006CC7C;
+			productRefGroup = D3063A27233DDF370006CC7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3063A25233DDF370006CC7C /* TenonVPNMac */,
+				D3063A58233DDFB40006CC7C /* PacketTunnel */,
+				D3063A69233DDFD20006CC7C /* freeWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3063A24233DDF370006CC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3063A2E233DDF380006CC7C /* Assets.xcassets in Resources */,
+				D3063A31233DDF380006CC7C /* Main.storyboard in Resources */,
+				D3063B04233DF7630006CC7C /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3063A57233DDFB40006CC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3063A68233DDFD20006CC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1E192032DE688E125028F4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TenonVPNMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3677A7AC77984F2103CEF50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-freeWidget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFE48765CE3907A70FD627BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PacketTunnel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3063A22233DDF370006CC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3063A2C233DDF370006CC7C /* ViewController.swift in Sources */,
+				D3063B03233DF7630006CC7C /* AppProxyProvider.swift in Sources */,
+				D3063A2A233DDF370006CC7C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3063A55233DDFB40006CC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3063A5C233DDFB40006CC7C /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3063A66233DDFD20006CC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3063A60233DDFB40006CC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3063A58233DDFB40006CC7C /* PacketTunnel */;
+			targetProxy = D3063A5F233DDFB40006CC7C /* PBXContainerItemProxy */;
+		};
+		D3063A71233DDFD20006CC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3063A69233DDFD20006CC7C /* freeWidget */;
+			targetProxy = D3063A70233DDFD20006CC7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3063A2F233DDF380006CC7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3063A30233DDF380006CC7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3063A4A233DDF380006CC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3063A4B233DDF380006CC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D3063A4D233DDF380006CC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D46BCA8226B28428A978ED /* Pods-TenonVPNMac.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TenonVPNMac/TenonVPNMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = TenonVPNMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D3063A4E233DDF380006CC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08A410A242C18C6B43EE2125 /* Pods-TenonVPNMac.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TenonVPNMac/TenonVPNMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = TenonVPNMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D3063A63233DDFB40006CC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F07FAF0A765B0E69E0C5A9A /* Pods-PacketTunnel.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D3063A64233DDFB40006CC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B001BCE2F331874CA73B96D0 /* Pods-PacketTunnel.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D3063A74233DDFD20006CC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CD77262728A66A91BEF907F /* Pods-freeWidget.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = freeWidget/freeWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = freeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac.freeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D3063A75233DDFD20006CC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151E787E815A206598864C65 /* Pods-freeWidget.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = freeWidget/freeWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = freeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac.freeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3063A21233DDF370006CC7C /* Build configuration list for PBXProject "TenonVPNMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3063A4A233DDF380006CC7C /* Debug */,
+				D3063A4B233DDF380006CC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3063A4C233DDF380006CC7C /* Build configuration list for PBXNativeTarget "TenonVPNMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3063A4D233DDF380006CC7C /* Debug */,
+				D3063A4E233DDF380006CC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3063A62233DDFB40006CC7C /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3063A63233DDFB40006CC7C /* Debug */,
+				D3063A64233DDFB40006CC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3063A73233DDFD20006CC7C /* Build configuration list for PBXNativeTarget "freeWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3063A74233DDFD20006CC7C /* Debug */,
+				D3063A75233DDFD20006CC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3063A1E233DDF370006CC7C /* Project object */;
+}

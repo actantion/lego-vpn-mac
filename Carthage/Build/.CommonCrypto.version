@@ -1,0 +1,9 @@
+{
+  "commitish" : "v1.1.0",
+  "Mac" : [
+    {
+      "name" : "CommonCrypto",
+      "hash" : "ea7b90ac3b47dd89310dbf13bf73180be9688d1a132186fb6f5d2702473dbb4b"
+    }
+  ]
+}
