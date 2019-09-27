@@ -18,7 +18,9 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let res = TenonP2pLib.sharedInstance.InitP2pNetwork("0.0.0.0", 7981)
+        let local_ip = TenonP2pLib.sharedInstance.getIFAddresses()[0]
+        print("local ip:" + local_ip)
+        let res = TenonP2pLib.sharedInstance.InitP2pNetwork(local_ip, 7981)
         
         local_country = res.local_country as String
         local_private_key = res.prikey as String
