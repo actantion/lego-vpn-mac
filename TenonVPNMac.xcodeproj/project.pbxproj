@@ -70,6 +70,8 @@
 		D3063B37233E0A0F0006CC7C /* Sodium.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063AD5233DF3EB0006CC7C /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D3063B38233E0A0F0006CC7C /* tun2socks.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063ADA233DF3EB0006CC7C /* tun2socks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D3063B39233E0A0F0006CC7C /* Yaml.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3063ADB233DF3EB0006CC7C /* Yaml.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3063B3D2340580F0006CC7C /* VpnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3063B3C2340580F0006CC7C /* VpnManager.swift */; };
+		D3063B4023405B900006CC7C /* NEKitRule.conf in Resources */ = {isa = PBXBuildFile; fileRef = D3063B3F23405B900006CC7C /* NEKitRule.conf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,7 +135,7 @@
 		72D46BCA8226B28428A978ED /* Pods-TenonVPNMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenonVPNMac.debug.xcconfig"; path = "Target Support Files/Pods-TenonVPNMac/Pods-TenonVPNMac.debug.xcconfig"; sourceTree = "<group>"; };
 		7CD77262728A66A91BEF907F /* Pods-freeWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeWidget.debug.xcconfig"; path = "Target Support Files/Pods-freeWidget/Pods-freeWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		853B619D233E2BAD00645BD4 /* TenonP2pLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenonP2pLib.swift; sourceTree = "<group>"; };
-		853B61A5233E2F0700645BD4 /* TenonVPNMac */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TenonVPNMac; sourceTree = "<group>"; };
+		853B61A5233E2F0700645BD4 /* TenonVPNMac */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TenonVPNMac; sourceTree = "<group>"; };
 		853B6221233E31AB00645BD4 /* libp2p.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libp2p.framework; path = Carthage/Build/Mac/libp2p.framework; sourceTree = "<group>"; };
 		8E1F1A7D7EE15ACBEEBF8D8F /* Pods_PacketTunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PacketTunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B001BCE2F331874CA73B96D0 /* Pods-PacketTunnel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PacketTunnel.release.xcconfig"; path = "Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +166,8 @@
 		D3063B00233DF7630006CC7C /* AppProxyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppProxyProvider.swift; sourceTree = "<group>"; };
 		D3063B01233DF7630006CC7C /* freeWidget.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = freeWidget.entitlements; sourceTree = "<group>"; };
 		D3063B02233DF7630006CC7C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3063B3C2340580F0006CC7C /* VpnManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VpnManager.swift; sourceTree = "<group>"; };
+		D3063B3F23405B900006CC7C /* NEKitRule.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEKitRule.conf; sourceTree = "<group>"; };
 		E7BA0988FE8093E45A87BF45 /* Pods_freeWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_freeWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -293,6 +297,8 @@
 		D3063A28233DDF370006CC7C /* TenonVPNMac */ = {
 			isa = PBXGroup;
 			children = (
+				D3063B3E23405B900006CC7C /* ConfigFile */,
+				D3063B3C2340580F0006CC7C /* VpnManager.swift */,
 				853B619D233E2BAD00645BD4 /* TenonP2pLib.swift */,
 				853B61A5233E2F0700645BD4 /* TenonVPNMac */,
 				D3063A29233DDF370006CC7C /* AppDelegate.swift */,
@@ -323,6 +329,14 @@
 				D3063B02233DF7630006CC7C /* Info.plist */,
 			);
 			path = freeWidget;
+			sourceTree = "<group>";
+		};
+		D3063B3E23405B900006CC7C /* ConfigFile */ = {
+			isa = PBXGroup;
+			children = (
+				D3063B3F23405B900006CC7C /* NEKitRule.conf */,
+			);
+			path = ConfigFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,6 +479,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3063B4023405B900006CC7C /* NEKitRule.conf in Resources */,
 				853B61A6233E2F0800645BD4 /* TenonVPNMac in Resources */,
 				D3063A2E233DDF380006CC7C /* Assets.xcassets in Resources */,
 				D3063A31233DDF380006CC7C /* Main.storyboard in Resources */,
@@ -564,6 +579,7 @@
 			files = (
 				D3063A2C233DDF370006CC7C /* ViewController.swift in Sources */,
 				853B619E233E2BAE00645BD4 /* TenonP2pLib.swift in Sources */,
+				D3063B3D2340580F0006CC7C /* VpnManager.swift in Sources */,
 				D3063B03233DF7630006CC7C /* AppProxyProvider.swift in Sources */,
 				D3063A2A233DDF370006CC7C /* AppDelegate.swift in Sources */,
 			);
