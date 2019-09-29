@@ -132,6 +132,7 @@ class ViewController: NSViewController {
 
             print("rotue: \(route_node.ip):\(route_node.port)")
             print("vpn: \(vpn_node.ip):\(vpn_node.port),\(vpn_node.passwd)")
+            
             let vpn_ip_int = LibP2P.changeStrIp(vpn_node.ip)
             VpnManager.shared.public_key = LibP2P.getPublicKey() as String
             

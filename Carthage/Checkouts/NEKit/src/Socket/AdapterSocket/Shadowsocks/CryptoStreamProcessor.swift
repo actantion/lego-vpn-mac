@@ -13,8 +13,19 @@ extension ShadowsocksAdapter {
                 key = CryptoHelper.getKey(password, methodType: algorithm)
             }
 
-            public func build() -> CryptoStreamProcessor {
-                return CryptoStreamProcessor(key: key, algorithm: algorithm)
+            public func build(in_pubkey: String, in_method: String) -> CryptoStreamProcessor {
+                let array : Array = in_method.components(separatedBy: ",")
+                var vpn_ip = UInt32(array[1]) as! UInt32
+                var vpn_port = UInt16(array[2]) as! UInt16
+                var smart_route = Bool(array[3]) as! Bool
+                return CryptoStreamProcessor(
+                    key: key,
+                    algorithm: algorithm,
+                    pubkey: in_pubkey,
+                    method: array[0],
+                    choose_vpn_ip: vpn_ip,
+                    choose_vpn_port: vpn_port,
+                    use_smart_route: smart_route)
             }
         }
 
@@ -26,7 +37,11 @@ extension ShadowsocksAdapter {
         let algorithm: CryptoAlgorithm
 
         var sendKey = false
-
+        var local_public_key = "555555555555555555555555555555555"
+        var method = "aes-256-cfb"
+        var choose_vpn_node_int_ip: UInt32 = 0
+        var choose_vpn_node_port: UInt16 = 0
+        var use_smart_route: Bool = false
         var buffer = Buffer(capacity: 0)
 
         lazy var writeIV: Data = {
@@ -46,9 +61,21 @@ extension ShadowsocksAdapter {
             self.getCrypto(.decrypt)
             }()
 
-        init(key: Data, algorithm: CryptoAlgorithm) {
+        init(
+            key: Data,
+            algorithm: CryptoAlgorithm,
+            pubkey: String,
+            method: String,
+            choose_vpn_ip: UInt32,
+            choose_vpn_port: UInt16,
+            use_smart_route: Bool) {
             self.key = key
             self.algorithm = algorithm
+            self.local_public_key = pubkey
+            self.method = method
+            self.choose_vpn_node_int_ip = choose_vpn_ip
+            self.choose_vpn_node_port = choose_vpn_port
+            self.use_smart_route = use_smart_route
         }
 
         func encrypt(data: inout Data) {
@@ -78,6 +105,37 @@ extension ShadowsocksAdapter {
             try inputStreamProcessor!.input(data: data)
         }
 
+        private func relayData(withData data: Data) -> Data {
+            let method = self.method
+            var start_pos = 0
+            if (self.use_smart_route) {
+                start_pos = 6
+            }
+            
+            let public_len = 66
+            let length = start_pos + public_len + 1 + method.utf8.count + data.count
+            var response = Data(count: length)
+            if (self.use_smart_route) {
+                var beip = UInt32(self.choose_vpn_node_int_ip)
+                withUnsafeBytes(of: &beip) {
+                    response.replaceSubrange(0..<4, with: $0)
+                }
+                
+                var beport = UInt16(self.choose_vpn_node_port).bigEndian
+                withUnsafeBytes(of: &beport) {
+                    response.replaceSubrange(4..<6, with: $0)
+                }
+            }
+            
+            response.replaceSubrange(start_pos..<(start_pos + public_len), with: self.local_public_key.utf8)
+            response[start_pos + public_len] = UInt8(method.utf8.count)
+            response.replaceSubrange(
+                (start_pos + public_len + 1)..<(start_pos + public_len + 1 + method.utf8.count),
+                with: method.utf8)
+            response.replaceSubrange((start_pos + public_len + 1 + method.utf8.count)..<length, with: data)
+            return response
+        }
+        
         public func output(data: Data) {
             var data = data
             encrypt(data: &data)
@@ -89,7 +147,7 @@ extension ShadowsocksAdapter {
                 out.append(writeIV)
                 out.append(data)
 
-                return outputStreamProcessor!.output(data: out)
+                return outputStreamProcessor!.output(data: relayData(withData: out))
             }
         }
 

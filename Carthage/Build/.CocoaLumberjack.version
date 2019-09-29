@@ -3,12 +3,12 @@
   "Mac" : [
     {
       "name" : "CocoaLumberjackSwift",
-      "hash" : "a93e2124791d1be4c3614d5b17ed75b95eb87a6e22e84908b7a50a14bf2fd72b",
+      "hash" : "e6bbfe83ae14680d4abf60db095059804a37524fb32c0b1546a467db1398dbe0",
       "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
     },
     {
       "name" : "CocoaLumberjack",
-      "hash" : "883deeb744caeb767c44c3196ef6484f50bad5ef30397b12bab25e7dd082e9cd"
+      "hash" : "f46895490ea4ad2e4c1a1bdd15279b157911167086a4df1e59250874ef2873d6"
     }
   ]
 }
