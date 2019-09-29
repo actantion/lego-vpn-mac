@@ -51,9 +51,11 @@ class ViewController: NSViewController {
     }
     @objc func onVPNStatusChanged(){
         if VpnManager.shared.vpnStatus == .on{
-            self.view.layer?.backgroundColor = NSColor.black.cgColor
+            print("已连接")
+//            self.view.layer?.backgroundColor = NSColor.black.cgColor
         }else{
-            self.view.layer?.backgroundColor = NSColor.yellow.cgColor
+            print("关闭连接")
+//            self.view.layer?.backgroundColor = NSColor.yellow.cgColor
         }
     }
     func getCountryShort(countryCode:String) -> String {
