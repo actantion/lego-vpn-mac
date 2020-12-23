@@ -1,5 +1,5 @@
 import Foundation
-import Yaml
+//import Yaml
 
 public enum ConfigurationParserError: Error {
     case invalidYamlFile, noRuleDefined, ruleTypeMissing, unknownRuleType, ruleParsingError(errorInfo: String), noAdapterDefined, adapterIDMissing, adapterTypeMissing, adapterTypeUnknown, adapterParsingError(errorInfo: String)

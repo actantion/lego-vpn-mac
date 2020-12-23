@@ -352,6 +352,7 @@
 				D3063A24233DDF370006CC7C /* Resources */,
 				D3063A65233DDFB40006CC7C /* Embed App Extensions */,
 				D3063B2E233E09290006CC7C /* CopyFiles */,
+				4BFD0CD7310BCA07584CBC32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -504,6 +505,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4BFD0CD7310BCA07584CBC32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TenonVPNMac/Pods-TenonVPNMac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TenonVPNMac/Pods-TenonVPNMac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TenonVPNMac/Pods-TenonVPNMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B1E192032DE688E125028F4E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -751,7 +769,7 @@
 				CODE_SIGN_ENTITLEMENTS = TenonVPNMac/TenonVPNMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				DEVELOPMENT_TEAM = 6F3LP697WK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -786,7 +804,7 @@
 					"-luv",
 					"-luuid",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.TenonVPNMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -801,7 +819,7 @@
 				CODE_SIGN_ENTITLEMENTS = TenonVPNMac/TenonVPNMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				DEVELOPMENT_TEAM = 6F3LP697WK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -836,7 +854,7 @@
 					"-luv",
 					"-luuid",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.TenonVPNMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -848,7 +866,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				DEVELOPMENT_TEAM = 6F3LP697WK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -860,7 +878,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac.PacketTunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.TenonVPNMac.PacketTunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -873,7 +891,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				DEVELOPMENT_TEAM = 6F3LP697WK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -885,7 +903,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac.PacketTunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.TenonVPNMac.PacketTunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -898,7 +916,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = freeWidget/freeWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				DEVELOPMENT_TEAM = 6F3LP697WK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -915,7 +933,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac.freeWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.TenonVPNMac.freeWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -928,7 +946,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = freeWidget/freeWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MF5R7KP39Q;
+				DEVELOPMENT_TEAM = 6F3LP697WK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -945,7 +963,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tenon.TenonVPNMac.freeWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.TenonVPNMac.freeWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
